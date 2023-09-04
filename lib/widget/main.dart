@@ -519,15 +519,12 @@ class _tudo extends State<tudo> {
                 Container(
                   padding: const EdgeInsets.only(
                     top: 10,
-                    left: 53,
-                    right: 53,
+                    left: 15,
+                    right: 15,
                     bottom: 12,
                   ),
-                  constraints: const BoxConstraints(
-                      minWidth: 100,
-                      maxWidth: 562,
-                      minHeight: 100,
-                      maxHeight: 667),
+                      width: 412,
+                      height: 667,
                   clipBehavior: Clip.antiAlias,
                   decoration: ShapeDecoration(
                     color: const Color(0xFF2D2A37),
@@ -675,8 +672,8 @@ class _tudo extends State<tudo> {
                             Wrap(
                               children: [
                                 Container(
-                                  width: 380,
-                                  height: 216,
+                                  width: 311,
+                                  height: 119,
                                   child: Wrap(
                                     children: [
                                       button_calculator(
@@ -737,8 +734,8 @@ class _tudo extends State<tudo> {
                                   ),
                                 ),
                                 Container(
-                                  width: 76,
-                                  height: 216,
+                                  width: 62,
+                                  height: 119,
                                   child: Wrap(
                                     children: [
                                       button_specialy9(

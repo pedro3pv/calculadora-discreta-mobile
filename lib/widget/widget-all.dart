@@ -13,7 +13,7 @@ class screen extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 402,
+          width: 362,
           height: 93,
           padding: const EdgeInsets.only(left: 18, right: 22),
           child: Column(
@@ -98,9 +98,9 @@ class button_calculator extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback(text)},
         child: Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: LinearGradient(
@@ -185,9 +185,9 @@ class button_specialy extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback()},
         child: Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -270,9 +270,9 @@ class button_specialy2 extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback()},
         child: Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -321,7 +321,7 @@ class button_specialy2 extends StatelessWidget {
                 child: Icon(
                   Icons.backspace,
                   color: Colors.white,
-                  size: 32,
+                  size: 24,
                   ),
                 ),
             ],
@@ -350,9 +350,9 @@ class button_specialy3 extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback(text)},
         child:Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -435,9 +435,9 @@ class button_specialy4 extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback('→')},
         child: Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -513,9 +513,9 @@ class button_specialy5 extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback('∧')},
         child: Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -591,9 +591,9 @@ class button_specialy6 extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback('↔')},
         child: Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -672,9 +672,9 @@ class button_specialy7 extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback('∨')},
         child: Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -751,9 +751,9 @@ class button_specialy8 extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback(text)},
         child: Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -838,9 +838,9 @@ class button_specialy9 extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback()},
         child: Container(
-          width: 64,
-          height: 216,
-          margin: const EdgeInsets.all(6.0),
+          width: 52,
+          height: 184,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -925,9 +925,9 @@ class button_specialy10 extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback('[Verdadeiro]')},
         child: Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -1012,9 +1012,9 @@ class button_specialy11 extends StatelessWidget {
         GestureDetector(
         onTap: () => {callback('[Falso]')},
         child: Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
@@ -1093,9 +1093,9 @@ class button_invisible extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 64,
-          height: 64,
-          margin: const EdgeInsets.all(6.0),
+          width: 52.18,
+          height: 54.52,
+          margin: const EdgeInsets.all(5.0),
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             shape: RoundedRectangleBorder(
