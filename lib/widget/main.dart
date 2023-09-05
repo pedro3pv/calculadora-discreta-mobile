@@ -15,15 +15,16 @@ class tudo extends StatefulWidget {
 }
 
 class _tudo extends State<tudo> {
-  static const OPERATORS = ['∼', '∧', '⊻', '∨', '→', '↔'];
+  final Set<String> OPERATORS = {'∼', '∧', '⊻', '∨', '→', '↔'};
   String expression = " ";
   bool calcular = true;
 
-  bool isVariable(String btnVal) { //verifica se o primeiro caractere da string é uma letra maiúscula.
-    if (btnVal.codeUnitAt(0) > 64 && btnVal.codeUnitAt(0) < 91) {
-      return true;
-    }
-    return false;
+  static const int A_UPPERCASE_CODE = 65; // Código Unicode para 'A'
+  static const int Z_UPPERCASE_CODE = 90; // Código Unicode para 'Z'
+
+  bool isVariable(String btnVal) {
+    final int firstCharCode = btnVal.codeUnitAt(0);
+    return firstCharCode >= A_UPPERCASE_CODE && firstCharCode <= Z_UPPERCASE_CODE;
   }
 
   bool isLogicalOperator(String btnVal) {
@@ -187,56 +188,26 @@ class _tudo extends State<tudo> {
     return result;
   }
 
+  final Map<String, Function(String, String)> operatorsMap = {
+    '∼': (p, _) => (p == '0') ? '1' : '0',
+    '∧': (p, q) => (p == '1' && q == '1') ? '1' : '0',
+    '⊻': (p, q) => ((p == '0' && q == '1') || (p == '1' && q == '0')) ? '1' : '0',
+    '∨': (p, q) => (p == '1' || q == '1') ? '1' : '0',
+    '→': (p, q) => (p == '1' && q == '0') ? '0' : '1',
+    '↔': (p, q) => ((p == '1' && q == '1') || (p == '0' && q == '0')) ? '1' : '0',
+  };
+
   String calculate_inner_expression(String exp) {
-    //O primeiro loop verifica se há o operador de negação (∼) seguido de um valor booleano (0 ou 1).
-    // Se encontrar, substitui o valor booleano negando-o (0 se torna 1, 1 se torna 0).
-    while (RegExp(r'∼(0|1)').hasMatch(exp)) {
-      exp = exp.replaceAllMapped(RegExp(r'∼(0|1)'), (match) {
-        String? p = match.group(1);
-        return (p == '0') ? '1' : '0';
-      });
+    for (var operator in operatorsMap.keys) {
+      final pattern = RegExp('([01])\\$operator([01])');
+      while (pattern.hasMatch(exp)) {
+        exp = exp.replaceAllMapped(pattern, (match) {
+          final p = match.group(1)!;
+          final q = match.group(2)!;
+          return operatorsMap[operator]!(p, q);
+        });
+      }
     }
-    //O segundo loop verifica se há o operador de conjunção (∧) entre dois valores booleanos (0 ou 1).
-    // Se encontrar, aplica a operação de conjunção, retornando 1 se ambos os valores forem 1, caso contrário, retorna 0.
-    while (RegExp(r'(0|1)∧(0|1)').hasMatch(exp)) {
-      exp = exp.replaceAllMapped(RegExp(r'(0|1)∧(0|1)'), (match) {
-        String? p = match.group(1);
-        String? q = match.group(2);
-        return (p == '1' && q == '1') ? '1' : '0';
-      });
-    }
-    while (RegExp(r'(0|1)⊻(0|1)').hasMatch(exp)) {
-      exp = exp.replaceAllMapped(RegExp(r'(0|1)⊻(0|1)'), (match) {
-        String? p = match.group(1);
-        String? q = match.group(2);
-        return ((p == '0' && q == '1') || (p == '1' && q == '0')) ? '1' : '0';
-      });
-    }
-    while (RegExp(r'(0|1)∨(0|1)').hasMatch(exp)) {
-      exp = exp.replaceAllMapped(RegExp(r'(0|1)∨(0|1)'), (match) {
-        String? p = match.group(1);
-        String? q = match.group(2);
-        return (p == '1' || q == '1') ? '1' : '0';
-      });
-    }
-    while (RegExp(r'(0|1)→(0|1)').hasMatch(exp)) {
-      exp = exp.replaceAllMapped(RegExp(r'(0|1)→(0|1)'), (match) {
-        String? p = match.group(1);
-        String? q = match.group(2);
-        return (p == '1' && q == '0') ? '0' : '1';
-      });
-    }
-    //O sexto loop verifica se há o operador de bicondicional (↔) entre dois valores booleanos (0 ou 1).
-    // Se encontrar, aplica a operação de bicondicional, retornando 1 se ambos os valores forem iguais (1 ou 0), caso contrário, retorna 0.
-    while (RegExp(r'(0|1)↔(0|1)').hasMatch(exp)) {
-      exp = exp.replaceAllMapped(RegExp(r'(0|1)↔(0|1)'), (match) {
-        String? p = match.group(1);
-        String? q = match.group(2);
-        return ((p == '1' && q == '1') || (p == '0' && q == '0')) ? '1' : '0';
-      });
-    }
-    //Os outros operadores (∨ para disjunção, → para implicação e ⊻ para ou-exclusivo) são tratados de maneira
-    // semelhante em loops subsequentes, onde a função encontra o operador correspondente e realiza a operação apropriada nos valores booleanos.
     return exp;
   }
 
@@ -487,8 +458,8 @@ class _tudo extends State<tudo> {
                       null;
                     }
                   },
-                  icon: Icon(Icons.table_rows),
-                  label: Text("Tabela verdade")),
+                  icon: const Icon(Icons.table_rows),
+                  label: const Text("Tabela verdade")),
             ],
           ),
           centerTitle: true,
@@ -502,8 +473,8 @@ class _tudo extends State<tudo> {
           ),
           home: Container(
             clipBehavior: Clip.antiAlias,
-            decoration: ShapeDecoration(
-              gradient: const LinearGradient(
+            decoration: const ShapeDecoration(
+              gradient: LinearGradient(
                 begin: Alignment(0.00, -1.00),
                 end: Alignment(0, 1),
                 colors: [Color(0xFF7F7ECE), Color(0xFF8E7ECE)],
@@ -716,7 +687,7 @@ class _tudo extends State<tudo> {
                                         text: 'V',
                                         callback: digito,
                                       ),
-                                      button_invisible(),
+                                      const button_invisible(),
                                       button_calculator(
                                         text: 'Y',
                                         callback: digito,
@@ -725,7 +696,7 @@ class _tudo extends State<tudo> {
                                         text: 'Z',
                                         callback: digito,
                                       ),
-                                      button_invisible(),
+                                      const button_invisible(),
                                       button_specialy11(
                                         text: 'F',
                                         callback: digito,
