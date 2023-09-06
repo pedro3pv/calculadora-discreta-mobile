@@ -15,4 +15,3 @@ jobs:
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
           baseHref: /calculadora-discreta-mobile/
-          webRenderer: html
