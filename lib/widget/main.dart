@@ -531,44 +531,6 @@ class _tudo extends State<tudo> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(48),
                     ),
-                    shadows: const [
-                      BoxShadow(
-                        color: Color(0x49000000),
-                        blurRadius: 17,
-                        offset: Offset(0, 8),
-                        spreadRadius: 0,
-                      ),
-                      BoxShadow(
-                        color: Color(0x42000000),
-                        blurRadius: 30,
-                        offset: Offset(0, 30),
-                        spreadRadius: 0,
-                      ),
-                      BoxShadow(
-                        color: Color(0x26000000),
-                        blurRadius: 41,
-                        offset: Offset(0, 68),
-                        spreadRadius: 0,
-                      ),
-                      BoxShadow(
-                        color: Color(0x0A000000),
-                        blurRadius: 48,
-                        offset: Offset(0, 120),
-                        spreadRadius: 0,
-                      ),
-                      BoxShadow(
-                        color: Color(0x02000000),
-                        blurRadius: 52,
-                        offset: Offset(0, 188),
-                        spreadRadius: 0,
-                      ),
-                      BoxShadow(
-                        color: Color(0x3F000000),
-                        blurRadius: 4,
-                        offset: Offset(0, 4),
-                        spreadRadius: 0,
-                      )
-                    ],
                   ),
                   child: Column(
                     children: [

@@ -111,34 +111,6 @@ class button_calculator extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -198,34 +170,6 @@ class button_specialy extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -283,34 +227,6 @@ class button_specialy2 extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: const Row(
             mainAxisSize: MainAxisSize.min,
@@ -363,34 +279,6 @@ class button_specialy3 extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -448,34 +336,6 @@ class button_specialy4 extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: const Row(
             mainAxisSize: MainAxisSize.min,
@@ -526,34 +386,6 @@ class button_specialy5 extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: const Row(
             mainAxisSize: MainAxisSize.min,
@@ -604,34 +436,6 @@ class button_specialy6 extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: Transform.rotate(
             angle: 45 * math.pi / 180,
@@ -685,34 +489,6 @@ class button_specialy7 extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: const Row(
             mainAxisSize: MainAxisSize.min,
@@ -764,34 +540,6 @@ class button_specialy8 extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -851,34 +599,6 @@ class button_specialy9 extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -938,34 +658,6 @@ class button_specialy10 extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -1025,34 +717,6 @@ class button_specialy11 extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(999),
             ),
-            shadows: const [
-              BoxShadow(
-                color: Color(0x49000000),
-                blurRadius: 2,
-                offset: Offset(0, 0),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x42000000),
-                blurRadius: 4,
-                offset: Offset(0, 2),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x19000000),
-                blurRadius: 6,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x0A000000),
-                blurRadius: 7,
-                offset: Offset(0, 7),
-                spreadRadius: 0,
-              ),BoxShadow(
-                color: Color(0x02000000),
-                blurRadius: 7,
-                offset: Offset(0, 11),
-                spreadRadius: 0,
-              )
-            ],
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
